@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std; //Using the standard C++ library
+
 //Create some preprocessors
 #define BREAK cout << "-----------------------------------------------------------------------------------------------------------" << endl;
 
@@ -22,13 +24,14 @@ string ConsolePrint::DisplayText(string text) {
 
 //Give us what this program is and how to use it
 void ConsolePrint::GiveTutorial() {
-	BREAK;
+
+	BREAK; //Create a line
 
 	cout << "What you see here is a military simulation where you pursuit the enemy!" << endl;
 
 	cout << "You have no idea where he is located, but given the right tools, I'm positive that you'll get the job done!" << endl;
 
-	BREAK;
+	BREAK; //Create a line
 
 	cout << "Move will arrow keys" << endl;
 
@@ -36,22 +39,20 @@ void ConsolePrint::GiveTutorial() {
 
 	cout << "If you feel like it'll take long, you can change the amount of steps with <Return>... \nThe default is always 1 unit" << endl;
 
-	BREAK;
+	BREAK; //Create a line
 
-	cout << "\n You will only be given the enemy's location at the start of the pursuit." << endl;
 
-	cout << "The enemy himself will be moving as well, making this a bit harder." << endl;
+	cout << "The enemy himself will escape each time you find him, and the sector widens, making this a bit harder." << endl;
 
 	cout << "Rely on the sounds given to you, however if you ever get closer to the enemy, the sound's frequency will lower, \nalso adding in the difficulty." << endl;
 
-	cout << "Have fun, and good luck!!!" << endl;
+	cout << "Good luck!!!" << endl;
 
-	BREAK;
+	BREAK; //Create a line
 }
 
 //A function that will ask for our names
 string ConsolePrint::AskForName() {
-	string name;
 	cout << "Give use your name private: "; cin >> name;
 	return name;
 }

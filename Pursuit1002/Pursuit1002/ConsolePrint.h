@@ -11,5 +11,7 @@ public:
 	string DisplayText(string text); //Our display text function
 	void GiveTutorial(); //A function to give us an tutorial
 	string AskForName(); //Ask for name input
+private:
+	string name;
 };
 

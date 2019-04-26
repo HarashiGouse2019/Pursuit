@@ -16,21 +16,21 @@
 
 
 //Using C++ defined header files
-#include <iostream>
+#include <iostream> //Include <iostream>
 
-#include <string>
+#include <string> //Include <string>
 
-#include <cmath>
+#include <cmath> //Include <cmath>
 
-#include <time.h>
+#include <time.h> //include <time.h>
 
-#include <conio.h>
+#include <conio.h> //Include <conio.h>
 
-#include <cstdlib>
+#include <cstdlib> //Include <cstdlib>
 
-#include <windows.h>
+#include <windows.h> //Include <windows.h>
 
-#include <algorithm>
+#include <algorithm> //Include <algorithm>
 
 //include user header files
 #include "ConsolePrint.h"
@@ -45,20 +45,20 @@ using namespace std; //using the standard library
 
 int main(int argc, char** argv[]) {
 
-	ConsolePrint print;
+	ConsolePrint print; //Create an object from the ConsolePrint class
 	
 	srand(time(NULL)); //Create our random seed;
 
 	print.DisplayText("Welcome Comrade!!!");
 
-	string name;
-	name = print.AskForName(); //We'll use a function to get input from the user.
+	string userName; //Create a string called string.
+	userName = print.AskForName(); //We'll use a function to get input from the user.
 
-	print.DisplayText("Well, it's good to have you here" + name); //Tell us that it is nice to meet us!!!
+	print.DisplayText("Well, it's good to have you here" + userName); //Tell us that it is nice to meet us!!!
 
 	print.GiveTutorial(); //Print out our tutorial
 
-	print.DisplayText("There's an enemy somewhere on the sector, " + name);
+	print.DisplayText("There's an enemy somewhere on the sector, " + userName);
 
 	print.DisplayText("Pursuit him!!!");
 

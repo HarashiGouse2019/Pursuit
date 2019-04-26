@@ -1,6 +1,6 @@
 //Include some C++ defined header files
-#include <iostream>
-#include <string>
+#include <iostream> //Include <iostream>
+#include <string> //Include <string> 
 
 //Include our user header file
 #include "Navi.h"
@@ -12,6 +12,7 @@ Navi::Navi(void) {};
 
 //Have our ChangeUnitSize created...
 int Navi::ChangeUnitSize(int unit) {
+
 	int * ptr_unit = &unit; //Create a pointer for our unit
 
 	int oldUnit, newUnit; //Create 2 variables, our old unit, and our new unit

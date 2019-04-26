@@ -1,9 +1,7 @@
 ﻿  ConsolePrint.cpp
+  Navi.cpp
+  Sim.cpp
   main.cpp
 c:\users\tokusunei\documents\github\pursuit\pursuit1002\pursuit1002\main.cpp(50): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Navi.cpp
-  PosiNavi.cpp
-  Sim.cpp
-  UnitNavi.cpp
   Generating Code...
   Pursuit1002.vcxproj -> C:\Users\Tokusunei\Documents\GitHub\Pursuit\Pursuit1002\x64\Debug\Pursuit1002.exe
